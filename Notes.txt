@@ -1,0 +1,25 @@
+vi Dockerfile
+
+'''
+FROM alpine
+CMD ["echo", "hello world!"]
+'''
+
+docker build /home/.../Leandro/AP\ Formation/docker/hello/ -t testimage
+
+docker run tesimage
+
+docker run --name testname testimage
+
+docker start testname
+docker stop testname
+
+docker rm testname
+
+docker ps -a
+
+docker rm -f gifted_bouman
+
+docker logs testimage
+
+docker ps -a
